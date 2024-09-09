@@ -1,0 +1,17 @@
+ALIAS,S600_SPOT_RB1O,,,,Local:10:O.Data[10]
+ALIAS,S600_AGV_O_AUTORUNNING,AGV 상태,Updated Description,,Local:10:O.Data[10].00
+ALIAS,S600_AGV_O_WANRNING,정위치 주변 구역에서 AGV 경고 (배터리 경고 등),,,Local:10:O.Data[10].01
+ALIAS,S600_AGV_O_FAULT,정위치 주변 구역에서 AGV 이상,,,Local:10:O.Data[10].02
+ALIAS,S600_AGV_O_EM_STOP,비상정지,,,Local:10:O.Data[10].03
+ALIAS,,,,,Local:10:O.Data[10].04
+ALIAS,S600_AGV_O_PART_OK,AGV에 검사대상바디 있음,,,Local:10:O.Data[10].05
+ALIAS,S600_AGV_O_PART_NONE,AGV에 검사대상바디 없음,,,Local:10:O.Data[10].06
+ALIAS,S600_AGV_O_POS_OK,AGV 정위치 상태,,,Local:10:O.Data[10].07
+ALIAS,S600_AGV_O_NON_INT,AGV 간섭무 상태,,,Local:10:O.Data[10].08
+ALIAS,S600_AGV_O_BODYTYPE_ON,AGV에 차종 있음,,,Local:10:O.Data[10].09
+ALIAS,S600_AGV_O_BODYTYPE_NONE,AGV에 차종 없음,,,Local:10:O.Data[10].10
+ALIAS,S600_AGV_O_IN_RUNNING,AGV에 검사공정으로 진입,,,Local:10:O.Data[10].11
+ALIAS,S600_AGV_O_OUT_RUNNING,AGV에 검사공정 밖으로 진출,,,Local:10:O.Data[10].12
+ALIAS,,,,,Local:10:O.Data[10].13
+ALIAS,,,,,Local:10:O.Data[10].14
+ALIAS,S600_AGV_O_HEART_BIT,통신체크용 0.5초 플리커,,,Local:10:O.Data[10].15

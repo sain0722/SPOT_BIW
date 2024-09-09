@@ -1,0 +1,332 @@
+/* 공용 스타일 */
+
+QPushButton {
+    background-color: rgb(179, 179, 179);
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: rgb(217, 217, 217);
+    color: white;
+}
+
+QPushButton:pressed {
+    background-color: rgb(179, 179, 179);
+}
+
+QPushButton[running="true"] {
+    color: #E74C3C;
+    background-color: #969696;
+}
+
+QPushButton[running="true"]:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+QPushButton[running="true"]:pressed {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+QFrame {
+    background-color: transparent;
+    /*background-color: rgba(0, 81, 139, 0.5);*/
+    /*border-radius: 10px;*/
+    /*padding: 20px;*/
+}
+
+QProgressBar {
+    font-size: 12px;
+}
+
+/* header 스타일 */
+#header {
+    background-color: transparent;
+    padding: 10px;
+    /*border-bottom: 3px solid #00778B;*/
+}
+
+/*#header[information="true"] {*/
+/*    border: 1px solid black;*/
+/*}*/
+
+#header QLabel {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+#header QLabel[title="true"] {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+#header QPushButton {
+    background-color: transparent;
+}
+
+#header QPushButton[estop="true"] {
+    width: 70px;
+    height: 70px;
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    border-radius: 40px;
+}
+
+#header QPushButton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#header QPushButton:pressed {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* body 스타일 */
+#body QLabel {
+    color: white;
+    font-size: 14px;
+}
+
+#body QLabel[title="true"] {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#body QFrame {
+    background-color: transparent;
+    /*border-radius: 10px;*/
+    padding: 15px;
+}
+
+QFrame#customFrame {
+    background-color: #00778B;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#logo {
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+#image {
+    border: 1px solid rgb(102, 102, 102);
+    margin: 0px;
+    padding: 0px;
+}
+
+#image[main_view="true"] {
+    background-color: rgba(179, 179, 179, 0.5);
+    padding: 0px;
+}
+
+BodyDisplayWidget #customFrame {
+    background-color: rgba(0, 44, 95, 0.7);
+    border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+BodyWidget #title {
+    font-size: 20px;
+    /*font-weight: bold;*/
+    background-color: transparent;
+    padding: 5px;
+}
+
+BodyWidget #log_list {
+    background-color: rgba(0, 70, 139, 0.5);
+    /*border: 1px solid #003B46;*/
+    border-radius: 10px;
+    padding: 10px;
+}
+
+BodyWidget #subtitle {
+    background-color: rgba(0, 44, 95, 0.7);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+BodyDisplayWidget #main_contents {
+    background-color: rgba(0, 44, 95, 0.7);
+    border-radius: 10px;
+}
+
+BodyDisplayWidget #interlock {
+    font-size: 14pt;
+    background-color: rgba(0, 44, 95, 0.7);
+    border-radius: 10px;
+}
+
+BodyDisplayWidget #position_dock {
+    color: black;
+    font-size: 11pt;
+    background-color: lightslategray;
+    border-radius: 10px;
+}
+
+BodyDisplayWidget #position1 {
+    color: black;
+    font-size: 11pt;
+    background-color: lightcoral;
+    border-radius: 10px;
+}
+
+BodyDisplayWidget #position2 {
+    color: black;
+    font-size: 11pt;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+BodyDisplayWidget #position3 {
+    color: black;
+    font-size: 11pt;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+BodyDisplayWidget #position_complete {
+    color: black;
+    font-size: 11pt;
+    background-color: lime;
+    border-radius: 10px;
+}
+
+BodyDisplayWidget #unselected {
+    background-color: darkgray;
+    color: white;
+}
+
+/* BodyAdmin 스타일 */
+
+#body_admin {
+    /*background-color: transparent;*/
+    background-color: rgba(0, 81, 139, 0.5);
+    /*border-radius: 10px;*/
+}
+
+#body_admin QLabel {
+    color: black;
+    font-size: 14px;
+}
+
+#body_admin QLabel:focus {
+    border: 2px solid blue;
+}
+
+#body_admin QFrame {
+    padding: 5px;
+}
+
+#body_admin QScrollArea{
+    background-color: transparent;
+}
+
+BodyAdminWidget QWidget {
+    font-size: 14px;
+}
+
+#admin_left_panel {
+    background-color: rgba(0, 44, 95, 0.2);
+    /*border-right: 1px solid #ccc;*/
+    border-radius: 10px;
+    /*padding: 10px;*/
+}
+
+#admin_left_panel QPushButton {
+    background-color: #d9d9d9;
+    border: 1px solid #a6a6a6;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+#admin_left_panel QPushButton:hover {
+    background-color: #c0c0c0;
+}
+
+#admin_left_panel QPushButton:pressed {
+    background-color: #a6a6a6;
+}
+
+/* 선택된 버튼을 강조하는 스타일 */
+#admin_left_panel QPushButton[selected="true"] {
+    background-color: #a6a6a6;
+    border: 2px solid rgba(0, 166, 255, 0.55);
+}
+
+BodyAdminWidget #title {
+    font-size: 30px;
+    /*font-weight: bold;*/
+    background-color: transparent;
+    padding-bottom: 10px;
+}
+
+BodyAdminWidget QLineEdit {
+    /*border: 1px solid gray;*/
+    /*border-radius: 5px;*/
+    /*padding: 5px;*/
+    /*background: rgba(255, 255, 255);*/
+    /*selection-background-color: lightblue;*/
+}
+
+#combobox QFrame{
+    padding: 0;
+}
+
+
+/*#scrollArea QFrame*/
+/*{*/
+/*    background-color: black;*/
+/*}*/
+
+/*QScrollArea {*/
+/*    background-color: black;*/
+/*}*/
+
+/*#WidgetHoleInspection_central_widget{*/
+/*    background-color: transparent;*/
+/*}*/
+
+/* Footer */
+
+FooterWidget #footer {
+    background-color: rgba(102, 102, 102, 0.5);
+}
+
+#footer QLabel {
+    color: white;
+    font-size: 14px;
+}
+
+FooterWidget #subtitle{
+    background-color: rgba(0, 44, 95, 0.7);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#signal_off QLabel QPushButton{
+    color: white;
+    font-family: "현대하모니 L";
+    background-color: red;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/*#signal_on QLabel QPushButton{*/
+/*    color: white;*/
+/*    font-family: "현대하모니 L";*/
+/*    background-color: lime;*/
+/*    padding: 16px;*/
+/*    font-size: 16px;*/
+/*    border-radius: 4px;*/
+/*}*/

@@ -1,0 +1,104 @@
+{
+    "spot_settings": {
+        "connection": {
+            "robot_ip": "10.136.148.12",
+            "username": "admin",
+            "password": "clientadmin123",
+            "dock_id": "521"
+        },
+        "control_params": {
+            "body_speed": 0.6,
+            "arm_speed": 0.05,
+            "camera_params": {
+                "resolution": "3840x2160",
+                "brightness": 0,
+                "contrast": 0,
+                "gain": 0,
+                "saturation": 0,
+                "focus_auto": true,
+                "focus_absolute": 0.22,
+                "exposure_auto": true,
+                "exposure_absolute": 0,
+                "hdr": "Auto"
+            }
+        }
+    },
+    "inspection_settings": {
+        "home": {
+            "waypoint": "HOME"
+        },
+        "position1": {
+            "waypoint": "Pose - 1",
+            "resolution": "3840x2160",
+            "focus_absolute": 0.44,
+            "arm_position": {
+                "sh0": -0.1581,
+                "sh1": -0.7493,
+                "el0": 1.7759,
+                "el1": -0.0064,
+                "wr0": -1.0209,
+                "wr1": 0.0012
+            }
+        },
+        "position2": {
+            "waypoint1": "Pose - 2",
+            "waypoint2": "Arm Pointing - 2",
+            "resolution": "3840x2160",
+            "focus_absolute": 0.38,
+            "arm_position": {
+                "sh0": 0.0951,
+                "sh1": -1.0341,
+                "el0": 0.4289,
+                "el1": -0.6125,
+                "wr0": 0.2294,
+                "wr1": 0.5646
+            }
+        },
+        "position3": {
+            "waypoint": "Pose - 3",
+            "resolution": "3840x2160",
+            "focus_absolute": 0.42,
+            "arm_position": {
+                "sh0": -0.0644,
+                "sh1": -1.3706,
+                "el0": 1.7334,
+                "el1": 0.0339,
+                "wr0": -0.4551,
+                "wr1": 0.333
+            }
+        },
+        "complete": {
+            "waypoint": "COMPLETE"
+        },
+        "hole_inspection": {
+            "template_image_path": "D:/BIW/SPOT_CONTROL/master_data/master/hole_inspection",
+            "region": [
+                452,
+                400,
+                2040,
+                1212
+            ],
+            "is_arm_correction": true,
+            "arm_correction_data": {
+                "path": "D:/BIW/SPOT_CONTROL/master_data/master/arm_correction/RH",
+                "pointcloud": "test_ply.ply",
+                "hand_color": "hand_color.jpg",
+                "hand_depth": "hand_depth.png",
+                "depth_color": "hand_depth_color.png",
+                "arm_pose": "arm_pose.json"
+            }
+        }
+    },
+    "depth_settings": {
+        "is_accumulate": true,
+        "is_extract_range": true,
+        "is_gaussian": true,
+        "is_sor": true,
+        "acm_count": 10,
+        "range_min": 1,
+        "range_max": 98,
+        "threshold": 2.0,
+        "nb_neighbors": 20,
+        "std_ratio": 2.0
+    }
+}

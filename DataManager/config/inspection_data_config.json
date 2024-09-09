@@ -1,0 +1,16 @@
+{
+    "location": "LH",
+    "hole_inspection_result": {
+        "result": true,
+        "image_path": "path/to/hole_image.jpg"
+    },
+    "qr_code_reading_results": {
+        "example_data1": "example_result1",
+        "example_data2": "example_result2",
+        "example_data3": "example_result3",
+        "image_path": "path/to/qr_image.jpg"
+    },
+    "inspection_time": 27.625,
+    "car_model_info": 11,
+    "timestamp": "20240627_132217"
+}
